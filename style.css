@@ -1,25 +1,47 @@
+body {
+    background: whitesmoke;
+}
+
 .container {
     display: flex;
-    flex-direction: column; /* Располагаем элементы по вертикали */
-    align-items: center; /* Центрируем элементы по горизонтали */
-    height: 100vh; /* Задаем высоту контейнера */
-    justify-content: center; /* Центрируем элементы по вертикали */
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh; 
+    justify-content: center; 
+}
+
+.reset {
+    width: 70px;
+    height: 40px;
+    background-color: red;
+    border: none;
 }
 
 .counter {
     font-size: 24px;
     color: black;
     margin-bottom: 10px;
-    text-align: center; /* Центрируем текст счетчика */
+    text-align: center; 
 }
 
-.buttons {
-    display: flex; /* Используем flex для кнопок */
-    flex-direction: column; /* Располагаем кнопки по вертикали */
-    align-items: center; /* Центрируем кнопки по горизонтали */
+.container1, .container2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px; 
 }
 
-.button1, .button2, .button3 {
+.container1 {
+    display: flex;
+    flex-direction: row; 
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row; 
+}
+
+.button1, .button2, .button3, .buttonM1, .buttonM2, .buttonM3 {
     width: 200px;
     height: 100px;
     border-radius: 10px;
@@ -31,15 +53,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
-}
-
-.button:hover {
-    background-color: #0056b3;
+    margin: 0 10px; 
 }
 
 @media (max-width: 600px) {
     .button1, .button2, .button3 {
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    .buttonM1, .buttonM2, .buttonM3 {
         width: 80px;
         height: 80px;
         font-size: 20px;
